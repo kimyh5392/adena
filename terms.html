@@ -28,9 +28,9 @@
                             <span class="bar"></span>
                         </button>
                         <ul>
-                            <li><a href="#">Overview</a></li>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Support</a></li>
+                            <li><a href="/index.html#section1">Overview</a></li>
+                            <li><a href="/index.html#section2">Community</a></li>
+                            <li><a href="#footer">Support</a></li>
                             <li><a href="https://docs.adena.app" target="_blank">Docs</a></li>
                             <li><a href="https://dashboard.adena.app" target="_blank">Dashboard</a></li>
                         </ul>
@@ -307,14 +307,25 @@
                     $('body').removeClass('opened');
                 });
                 
-                // item-slider
-                $('.item-slider').slick({
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    arrows: false, 
-                    dots: false,
-                    autoplaySpeed: 4000,
+                // link move
+                var $link = $('#gnb ul > li > a');
+				var $height;
+                
+				$(window).on('load resize', function(){
+					$height = $('#header').height();
+				});
+				
+                // spy scroll 관련
+                $link.on('click',function(e){
+                    $('#gnb').fadeOut();
+                    var target = $($(this).attr('href')); 
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - $height
+                    }, 400);
+                    setTimeout(function(){
+                        $('body').removeClass('opened');
+                    }, 300);
+                    e.preventDefault();
                 });
             })(jQuery);
         </script>

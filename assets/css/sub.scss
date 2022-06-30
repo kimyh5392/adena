@@ -116,11 +116,19 @@
     }
 }
 
-.dashboard-commoing {
-    img {
-        width: 100%;
-        display: block;
-    }
+
+/* space-body */
+.space-body {
+    padding-top: 0 !important;
+}
+
+.dashboard-coming {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/images/img_coming_soon.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 
 

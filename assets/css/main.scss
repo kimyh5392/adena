@@ -90,7 +90,8 @@
         }
     }
     @media(min-width: $md) {
-        padding-bottom: 220px;
+        //padding-bottom: 220px;
+        padding-bottom: 180px;
         .container {
             padding: 260px 20px 0;
             .summary {
@@ -138,11 +139,11 @@
 
 /* experience */
 .experience {
-    padding: 70px 0 65px;
+    padding-bottom: 65px;
     .container {
         .section-header {
             text-align: center;
-            padding-bottom: 40px;
+            padding: 70px 0 40px;
             h3 {
                 font-size: 24px;
                 line-height: 34px;
@@ -222,10 +223,10 @@
         }
     }
     @media(min-width: $md) {
-        padding: 60px 0 120px;
+        padding-bottom: 120px;
         .container {
             .section-header {
-                padding-bottom: 80px;
+                padding: 100px 0 80px;
                 br {
                     display: none;
                 }
@@ -459,7 +460,9 @@
                 margin-top: 10px;
             }
             & ~ .section-header {
-                margin-top: 64px;
+                margin-top: 10px;
+                /*margin-top: 20px;*/
+                padding-top: 54px;
             }
         }
         .section-content {
@@ -610,7 +613,8 @@
                     margin-top: 16px;
                 }
                 & ~ .section-header {
-                    margin-top: 160px;
+                    margin-top: 40px;
+                    padding-top: 120px;
                 }
             }
             .section-content {

@@ -204,6 +204,8 @@ a, button {
         #header .container #gnb {
           position: static;
           width: 100%;
+          display: block !important;
+          opacity: 1 !important;
           box-shadow: none;
           background: none; }
           #header .container #gnb .gnb-wrap {
@@ -328,7 +330,7 @@ a, button {
       font-size: 0; }
       #footer .container .sns-list > ul > li {
         display: inline-block;
-        margin-right: 40px; }
+        margin-right: 30px; }
         #footer .container .sns-list > ul > li:last-child {
           margin-right: 0; }
         #footer .container .sns-list > ul > li > a {
@@ -406,6 +408,7 @@ a, button {
             float: left; } }
 
 body.opened #header .container #gnb {
+  display: block !important;
   right: 0; }
 
 /*# sourceMappingURL=default.css.map */

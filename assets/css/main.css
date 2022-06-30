@@ -155,7 +155,7 @@ a, button {
             display: block; }
   @media (min-width: 1024px) {
     .jumbotron {
-      padding-bottom: 220px; }
+      padding-bottom: 180px; }
       .jumbotron .container {
         padding: 260px 20px 0; }
         .jumbotron .container .summary {
@@ -190,10 +190,10 @@ a, button {
 
 /* experience */
 .experience {
-  padding: 70px 0 65px; }
+  padding-bottom: 65px; }
   .experience .container .section-header {
     text-align: center;
-    padding-bottom: 40px; }
+    padding: 70px 0 40px; }
     .experience .container .section-header h3 {
       font-size: 24px;
       line-height: 34px;
@@ -250,9 +250,9 @@ a, button {
     margin-top: 24px; }
   @media (min-width: 1024px) {
     .experience {
-      padding: 60px 0 120px; }
+      padding-bottom: 120px; }
       .experience .container .section-header {
-        padding-bottom: 80px; }
+        padding: 100px 0 80px; }
         .experience .container .section-header br {
           display: none; }
         .experience .container .section-header h3 {
@@ -404,7 +404,9 @@ a, button {
       line-height: 24px;
       margin-top: 10px; }
     .priority .container .section-header ~ .section-header {
-      margin-top: 64px; }
+      margin-top: 10px;
+      /*margin-top: 20px;*/
+      padding-top: 54px; }
   .priority .container .section-content .basic-list {
     display: table;
     width: 100%;
@@ -506,7 +508,8 @@ a, button {
           line-height: 34px;
           margin-top: 16px; }
         .priority .container .section-header ~ .section-header {
-          margin-top: 160px; }
+          margin-top: 40px;
+          padding-top: 120px; }
       .priority .container .section-content .basic-list > li .box {
         position: relative;
         padding: 60px 45px 60px 194px; }
